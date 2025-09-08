@@ -4,8 +4,11 @@ A full-stack e-commerce application built with Next.js, Express.js, and MongoDB.
 
 ## 🌐 Live Deployment
 
-- Frontend: [https://ecommmerce-821qbwtma-ayush-kumars-projects-670ebe9f.vercel.app](https://ecommmerce-821qbwtma-ayush-kumars-projects-670ebe9f.vercel.app)
+- Frontend: [https://bingee-buyy.vercel.app](https://bingee-buyy.vercel.app)
 - Backend API: [https://ecommmerce-app-4c1y.onrender.com](https://ecommmerce-app-4c1y.onrender.com)
+
+### Domain Setup
+The application uses a custom Vercel domain to ensure stable deployment URLs. This prevents CORS issues that can occur with Vercel's preview deployments.
 
 ### Important Note for Deployment
 If you're deploying your own version:

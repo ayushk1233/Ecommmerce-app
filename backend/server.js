@@ -13,9 +13,11 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 // --- CORS Setup ---
-const allowedOrigins = process.env.FRONTEND_URL 
-  ? [process.env.FRONTEND_URL, 'http://localhost:3000']
-  : ['http://localhost:3000'];
+const FRONTEND_URL = 'https://bingee-buyy.vercel.app';
+const allowedOrigins = [
+  FRONTEND_URL,
+  'http://localhost:3000'
+];
 
 console.log('Allowed CORS origins:', allowedOrigins);
 
