@@ -13,24 +13,22 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 // --- CORS Setup ---
-const allowedOrigins = [
-  'https://ecommmerce-821qbwtma-ayush-kumars-projects-670ebe9f.vercel.app',
-  'https://ecommmerce-rkmmlo9u2-ayush-kumars-projects-670ebe9f.vercel.app',
-  'http://localhost:3000' // For local development
-];
+const allowedOrigins = process.env.FRONTEND_URL 
+  ? [process.env.FRONTEND_URL, 'http://localhost:3000']
+  : ['http://localhost:3000'];
+
+console.log('Allowed CORS origins:', allowedOrigins);
 
 app.use(cors({
   origin: function(origin, callback) {
     // Allow requests with no origin (like mobile apps, curl requests)
-    if (!origin) {
-      return callback(null, true);
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      console.log('Blocked origin:', origin);
+      console.log('Allowed origins:', allowedOrigins);
+      callback(new Error('Not allowed by CORS'));
     }
-
-    if (allowedOrigins.indexOf(origin) === -1) {
-      const msg = 'The CORS policy for this site does not allow access from the specified Origin.';
-      return callback(new Error(msg), false);
-    }
-    return callback(null, true);
   },
   credentials: true
 }));
