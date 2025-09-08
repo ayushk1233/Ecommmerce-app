@@ -2,7 +2,40 @@
 
 A full-stack e-commerce application built with Next.js, Express.js, and MongoDB.
 
-## Features
+## 🌐 Live Deployment
+
+- Frontend: [https://ecommmerce-821qbwtma-ayush-kumars-projects-670ebe9f.vercel.app](https://ecommmerce-821qbwtma-ayush-kumars-projects-670ebe9f.vercel.app)
+- Backend API: [https://ecommmerce-app-4c1y.onrender.com](https://ecommmerce-app-4c1y.onrender.com)
+
+### Important Note for Deployment
+If you're deploying your own version:
+1. Update the FRONTEND_URL environment variable in your Render dashboard to match your Vercel deployment URL
+2. Update the NEXT_PUBLIC_API_URL in your Vercel deployment to match your Render backend URL
+3. Update the allowedOrigins array in backend/server.js with your frontend URLs
+
+## 🧪 API Testing Links
+
+Test these endpoints using Postman or curl:
+
+### Authentication
+- Register: `POST https://ecommerce-app-1-t94l.onrender.com/api/auth/signup`
+- Login: `POST https://ecommerce-app-1-t94l.onrender.com/api/auth/login`
+- Get User: `GET https://ecommerce-app-1-t94l.onrender.com/api/auth/me`
+
+### Products
+- List Products: `GET https://ecommerce-app-1-t94l.onrender.com/api/products`
+- Get Product: `GET https://ecommerce-app-1-t94l.onrender.com/api/products/:id`
+- Create Product: `POST https://ecommerce-app-1-t94l.onrender.com/api/products`
+- Update Product: `PUT https://ecommerce-app-1-t94l.onrender.com/api/products/:id`
+- Delete Product: `DELETE https://ecommerce-app-1-t94l.onrender.com/api/products/:id`
+
+### Cart
+- Get Cart: `GET https://ecommerce-app-1-t94l.onrender.com/api/cart`
+- Add to Cart: `POST https://ecommerce-app-1-t94l.onrender.com/api/cart/add`
+- Update Cart Item: `PUT https://ecommerce-app-1-t94l.onrender.com/api/cart/update/:productId`
+- Remove from Cart: `DELETE https://ecommerce-app-1-t94l.onrender.com/api/cart/:productId`
+
+## 🚀 Features
 
 - 🛍️ Product listing and details
 - 🛒 Shopping cart functionality
@@ -43,11 +76,20 @@ cd backend
 npm install
 ```
 
-3. Create a `.env` file in the backend directory with the following variables:
+3. Create a `.env` file in the backend directory:
 ```env
-PORT=3001
-MONGODB_URI=mongodb://localhost:27017/ecommerce
+MONGODB_URI=mongodb+srv://your_mongodb_uri_here
 JWT_SECRET=your_jwt_secret_here
+PORT=3001
+FRONTEND_URL=http://localhost:3000
+```
+
+For production, you'll need to change these values:
+```env
+MONGODB_URI=your_production_mongodb_uri
+JWT_SECRET=your_production_secret
+PORT=3001
+FRONTEND_URL=https://your-frontend-domain.com
 ```
 
 4. Seed the database with sample products:
