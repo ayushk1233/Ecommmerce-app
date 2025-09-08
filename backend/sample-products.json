@@ -1,0 +1,366 @@
+[
+  {
+    "name": "iPhone 15 Pro Max",
+    "description": "Latest iPhone with titanium design, A17 Pro chip, and advanced camera system with 5x optical zoom",
+    "price": 159900,
+    "category": "Electronics",
+    "image": "https://picsum.photos/500/500?random=1"
+  },
+  {
+    "name": "Samsung Galaxy S24 Ultra",
+    "description": "Premium Android smartphone with S Pen, 200MP camera, and AI features",
+    "price": 129999,
+    "category": "Electronics",
+    "image": "https://picsum.photos/500/500?random=2"
+  },
+  {
+    "name": "MacBook Pro 16-inch M3",
+    "description": "Professional laptop with M3 chip, 16GB RAM, 512GB SSD for creative professionals",
+    "price": 249900,
+    "category": "Electronics",
+    "image": "https://images.unsplash.com/photo-1541807084-5c52b6b3adef?w=500&h=500&fit=crop"
+  },
+  {
+    "name": "Dell XPS 13",
+    "description": "Ultra-portable laptop with Intel i7, 16GB RAM, and stunning InfinityEdge display",
+    "price": 89999,
+    "category": "Electronics",
+    "image": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=500&h=500&fit=crop"
+  },
+  {
+    "name": "Sony WH-1000XM5 Headphones",
+    "description": "Industry-leading noise canceling wireless headphones with 30-hour battery",
+    "price": 29990,
+    "category": "Electronics",
+    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&h=500&fit=crop"
+  },
+  {
+    "name": "Apple Watch Series 9",
+    "description": "Advanced health tracking, fitness monitoring, and smart notifications on your wrist",
+    "price": 41900,
+    "category": "Electronics",
+    "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&h=500&fit=crop"
+  },
+  {
+    "name": "iPad Pro 12.9-inch",
+    "description": "Powerful tablet with M2 chip, Liquid Retina XDR display, perfect for professionals",
+    "price": 112900,
+    "category": "Electronics",
+    "image": "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=500&h=500&fit=crop"
+  },
+  {
+    "name": "Canon EOS R5 Camera",
+    "description": "Professional mirrorless camera with 45MP sensor and 8K video recording",
+    "price": 329999,
+    "category": "Electronics",
+    "image": "https://images.unsplash.com/photo-1606983340126-99ab4feaa64a?w=500&h=500&fit=crop"
+  },
+  {
+    "name": "PlayStation 5",
+    "description": "Next-gen gaming console with ultra-fast SSD and ray tracing technology",
+    "price": 54990,
+    "category": "Electronics",
+    "image": "https://images.unsplash.com/photo-1607853202273-797f1c22a38e?w=500&h=500&fit=crop"
+  },
+  {
+    "name": "Nintendo Switch OLED",
+    "description": "Portable gaming console with vibrant 7-inch OLED screen",
+    "price": 37980,
+    "category": "Electronics",
+    "image": "https://images.unsplash.com/photo-1578303512597-81e6cc155b3e?w=500&h=500&fit=crop"
+  },
+  {
+    "name": "Nike Air Jordan 1 High",
+    "description": "Iconic basketball sneakers with premium leather and classic colorway",
+    "price": 12795,
+    "category": "Fashion",
+    "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500&h=500&fit=crop"
+  },
+  {
+    "name": "Adidas Ultraboost 23",
+    "description": "Premium running shoes with responsive Boost midsole and Primeknit upper",
+    "price": 17999,
+    "category": "Fashion",
+    "image": "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=500&h=500&fit=crop"
+  },
+  {
+    "name": "Levi's 501 Original Jeans",
+    "description": "Classic straight-fit jeans made with premium denim, timeless style",
+    "price": 4999,
+    "category": "Fashion",
+    "image": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=500&h=500&fit=crop"
+  },
+  {
+    "name": "H&M Cotton T-Shirt",
+    "description": "Comfortable cotton t-shirt in various colors, perfect for casual wear",
+    "price": 799,
+    "category": "Fashion",
+    "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=500&h=500&fit=crop"
+  },
+  {
+    "name": "Zara Leather Jacket",
+    "description": "Premium faux leather jacket with modern fit and stylish design",
+    "price": 7999,
+    "category": "Fashion",
+    "image": "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=500&h=500&fit=crop"
+  },
+  {
+    "name": "Formal Dress Shirt",
+    "description": "Crisp white cotton dress shirt perfect for office and formal occasions",
+    "price": 1899,
+    "category": "Fashion",
+    "image": "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=500&h=500&fit=crop"
+  },
+  {
+    "name": "Designer Handbag",
+    "description": "Elegant leather handbag with gold hardware and adjustable strap",
+    "price": 12999,
+    "category": "Fashion",
+    "image": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=500&h=500&fit=crop"
+  },
+  {
+    "name": "Casio G-Shock Watch",
+    "description": "Rugged digital watch with shock resistance and 200m water resistance",
+    "price": 8999,
+    "category": "Fashion",
+    "image": "https://images.unsplash.com/photo-1524592094714-0f0654e20314?w=500&h=500&fit=crop"
+  },
+  {
+    "name": "Ray-Ban Aviator Sunglasses",
+    "description": "Classic aviator sunglasses with UV protection and metal frame",
+    "price": 11999,
+    "category": "Fashion",
+    "image": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=500&h=500&fit=crop"
+  },
+  {
+    "name": "Winter Wool Sweater",
+    "description": "Cozy wool sweater perfect for cold weather, available in multiple colors",
+    "price": 3499,
+    "category": "Fashion",
+    "image": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=500&h=500&fit=crop"
+  },
+  {
+    "name": "Modern Sofa Set",
+    "description": "3-seater comfortable sofa with premium fabric upholstery and wooden legs",
+    "price": 45999,
+    "category": "Home",
+    "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=500&h=500&fit=crop"
+  },
+  {
+    "name": "Dining Table Set",
+    "description": "6-seater wooden dining table with matching chairs, perfect for family meals",
+    "price": 32999,
+    "category": "Home",
+    "image": "https://images.unsplash.com/photo-1449247709967-d4461a6a6103?w=500&h=500&fit=crop"
+  },
+  {
+    "name": "Queen Size Bed",
+    "description": "Comfortable queen size bed with upholstered headboard and storage",
+    "price": 28999,
+    "category": "Home",
+    "image": "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=500&h=500&fit=crop"
+  },
+  {
+    "name": "Coffee Table",
+    "description": "Modern glass-top coffee table with metal legs, perfect for living room",
+    "price": 8999,
+    "category": "Home",
+    "image": "https://images.unsplash.com/photo-1506439773649-6e0eb8cfb237?w=500&h=500&fit=crop"
+  },
+  {
+    "name": "LED Floor Lamp",
+    "description": "Adjustable LED floor lamp with multiple brightness settings and USB charging",
+    "price": 4999,
+    "category": "Home",
+    "image": "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=500&h=500&fit=crop"
+  },
+  {
+    "name": "Kitchen Cabinet Set",
+    "description": "Complete modular kitchen cabinet set with soft-close doors and drawers",
+    "price": 125999,
+    "category": "Home",
+    "image": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=500&h=500&fit=crop"
+  },
+  {
+    "name": "Decorative Mirror",
+    "description": "Large decorative wall mirror with ornate gold frame",
+    "price": 6999,
+    "category": "Home",
+    "image": "https://images.unsplash.com/photo-1618220179428-22790b461013?w=500&h=500&fit=crop"
+  },
+  {
+    "name": "Area Rug",
+    "description": "Premium wool area rug with geometric pattern, 6x9 feet",
+    "price": 15999,
+    "category": "Home",
+    "image": "https://images.unsplash.com/photo-1586105251261-72a756497a11?w=500&h=500&fit=crop"
+  },
+  {
+    "name": "Curtain Set",
+    "description": "Blackout curtains with thermal insulation, multiple colors available",
+    "price": 2999,
+    "category": "Home",
+    "image": "https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=500&h=500&fit=crop"
+  },
+  {
+    "name": "Indoor Plant Pot Set",
+    "description": "Set of 3 ceramic planters with drainage holes, perfect for indoor plants",
+    "price": 1999,
+    "category": "Home",
+    "image": "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=500&h=500&fit=crop"
+  },
+  {
+    "name": "Professional Treadmill",
+    "description": "Electric treadmill with 12 workout programs and heart rate monitoring",
+    "price": 89999,
+    "category": "Sports",
+    "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&h=500&fit=crop"
+  },
+  {
+    "name": "Yoga Mat Premium",
+    "description": "Non-slip yoga mat with alignment lines, 6mm thickness for comfort",
+    "price": 2999,
+    "category": "Sports",
+    "image": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=500&h=500&fit=crop"
+  },
+  {
+    "name": "Dumbbell Set",
+    "description": "Adjustable dumbbell set with weight plates, perfect for home gym",
+    "price": 12999,
+    "category": "Sports",
+    "image": "https://images.unsplash.com/photo-1434754205268-ad3b5f05f2ad?w=500&h=500&fit=crop"
+  },
+  {
+    "name": "Tennis Racket",
+    "description": "Professional tennis racket with carbon fiber frame and comfortable grip",
+    "price": 8999,
+    "category": "Sports",
+    "image": "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=500&h=500&fit=crop"
+  },
+  {
+    "name": "Basketball",
+    "description": "Official size basketball with superior grip and bounce control",
+    "price": 2499,
+    "category": "Sports",
+    "image": "https://images.unsplash.com/photo-1546519638-68e109498ffc?w=500&h=500&fit=crop"
+  },
+  {
+    "name": "Bicycle Mountain Bike",
+    "description": "21-speed mountain bike with front suspension and disc brakes",
+    "price": 25999,
+    "category": "Sports",
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&h=500&fit=crop"
+  },
+  {
+    "name": "Swimming Goggles",
+    "description": "Anti-fog swimming goggles with UV protection and adjustable strap",
+    "price": 1299,
+    "category": "Sports",
+    "image": "https://images.unsplash.com/photo-1530549387789-4c1017266635?w=500&h=500&fit=crop"
+  },
+  {
+    "name": "Fitness Tracker Band",
+    "description": "Waterproof fitness tracker with heart rate monitor and sleep tracking",
+    "price": 4999,
+    "category": "Sports",
+    "image": "https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=500&h=500&fit=crop"
+  },
+  {
+    "name": "Protein Shaker Bottle",
+    "description": "BPA-free protein shaker with mixing ball and measurement markings",
+    "price": 799,
+    "category": "Sports",
+    "image": "https://images.unsplash.com/photo-1594737625785-a6cbdabd333c?w=500&h=500&fit=crop"
+  },
+  {
+    "name": "Resistance Bands Set",
+    "description": "Set of 5 resistance bands with different resistance levels and door anchor",
+    "price": 1999,
+    "category": "Sports",
+    "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&h=500&fit=crop"
+  },
+  {
+    "name": "Harry Potter Complete Set",
+    "description": "Complete collection of Harry Potter books in hardcover edition",
+    "price": 4999,
+    "category": "Books",
+    "image": "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=500&h=500&fit=crop"
+  },
+  {
+    "name": "Programming Fundamentals",
+    "description": "Comprehensive guide to programming concepts and languages",
+    "price": 1899,
+    "category": "Books",
+    "image": "https://images.unsplash.com/photo-1532012197267-da84d127e765?w=500&h=500&fit=crop"
+  },
+  {
+    "name": "Cooking Recipe Book",
+    "description": "500 delicious recipes from around the world with step-by-step instructions",
+    "price": 1299,
+    "category": "Books",
+    "image": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=500&h=500&fit=crop"
+  },
+  {
+    "name": "Business Strategy Guide",
+    "description": "Essential strategies for building and growing successful businesses",
+    "price": 2299,
+    "category": "Books",
+    "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=500&fit=crop"
+  },
+  {
+    "name": "Fiction Novel Collection",
+    "description": "Bestselling fiction novels from award-winning authors",
+    "price": 3499,
+    "category": "Books",
+    "image": "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=500&h=500&fit=crop"
+  },
+  {
+    "name": "Photography Art Book",
+    "description": "Stunning photography collection showcasing nature and landscapes",
+    "price": 2999,
+    "category": "Books",
+    "image": "https://images.unsplash.com/photo-1509021436665-8f07dbf5bf1d?w=500&h=500&fit=crop"
+  },
+  {
+    "name": "Children's Story Books",
+    "description": "Set of 10 illustrated children's books perfect for bedtime stories",
+    "price": 1999,
+    "category": "Books",
+    "image": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=500&h=500&fit=crop"
+  },
+  {
+    "name": "Science Encyclopedia",
+    "description": "Comprehensive science encyclopedia with latest discoveries and facts",
+    "price": 3999,
+    "category": "Books",
+    "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=500&fit=crop"
+  },
+  {
+    "name": "Self-Help Motivation Book",
+    "description": "Inspiring book about personal development and achieving success",
+    "price": 899,
+    "category": "Books",
+    "image": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=500&h=500&fit=crop"
+  },
+  {
+    "name": "Travel Guide Collection",
+    "description": "Complete travel guides for top 50 destinations worldwide",
+    "price": 2799,
+    "category": "Books",
+    "image": "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=500&h=500&fit=crop"
+  },
+  {
+    "name": "Samsung 55\" 4K Smart TV",
+    "description": "Ultra HD Smart TV with HDR, built-in WiFi, and streaming apps",
+    "price": 54999,
+    "category": "Electronics",
+    "image": "https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=500&h=500&fit=crop"
+  },
+  {
+    "name": "LG Refrigerator 260L",
+    "description": "Energy-efficient double door refrigerator with inverter technology",
+    "price": 32999,
+    "category": "Electronics",
+    "image": "https://images.unsplash.com/photo-1571175351734-79a0c8c2e8a4?w=500&h=500&fit=crop"
+  }
+]
