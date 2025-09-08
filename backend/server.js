@@ -13,27 +13,45 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 // --- CORS Setup ---
-const FRONTEND_URL = 'https://bingee-buyy.vercel.app';
 const allowedOrigins = [
-  FRONTEND_URL,
+  'https://bingee-buyy.vercel.app',
   'http://localhost:3000'
 ];
 
-console.log('Allowed CORS origins:', allowedOrigins);
-
 app.use(cors({
   origin: function(origin, callback) {
+    console.log('=== CORS DEBUG ===');
+    console.log('Incoming origin:', origin);
+    console.log('Allowed origins:', allowedOrigins);
+    
     // Allow requests with no origin (like mobile apps, curl requests)
     if (!origin || allowedOrigins.includes(origin)) {
+      console.log('✅ Origin allowed:', origin);
       callback(null, true);
     } else {
-      console.log('Blocked origin:', origin);
-      console.log('Allowed origins:', allowedOrigins);
+      console.log('❌ Origin blocked:', origin);
       callback(new Error('Not allowed by CORS'));
     }
   },
-  credentials: true
+  credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization']
 }));
+
+// Manual CORS headers as backup
+app.use((req, res, next) => {
+  console.log('Adding manual CORS headers');
+  res.header('Access-Control-Allow-Origin', 'https://bingee-buyy.vercel.app');
+  res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
+  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization');
+  res.header('Access-Control-Allow-Credentials', 'true');
+  
+  if (req.method === 'OPTIONS') {
+    console.log('Handling OPTIONS request');
+    return res.sendStatus(200);
+  }
+  next();
+});
 
 // --- Middleware ---
 app.use(express.json());
