@@ -18,7 +18,7 @@ app.use((req, res, next) => {
 
 // CORS middleware
 app.use(cors({
-  origin: ['http://localhost:3000', 'http://localhost:3003'], // frontend ports
+  origin: ['http://localhost:3000', 'http://localhost:3003', 'https://ecommmerce-app-nine.vercel.app'], // frontend ports
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization'],
