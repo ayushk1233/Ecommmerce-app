@@ -1,77 +1,48 @@
+// server.js
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
-require('dotenv').config();
+const dotenv = require('dotenv');
+const authRoutes = require('./routes/auth');
+const productRoutes = require('./routes/product');
+const cartRoutes = require('./routes/cart');
+
+dotenv.config();
 
 const app = express();
+const PORT = process.env.PORT || 3001;
 
-// Body parser middleware
-app.use(express.json());
-
-// Request logging middleware
-app.use((req, res, next) => {
-  console.log(`[${new Date().toISOString()}] ${req.method} ${req.url}`);
-  console.log('Headers:', req.headers);
-  console.log('Body:', req.body);
-  next();
-});
-
-// CORS middleware
+// --- CORS Setup ---
 app.use(cors({
-  origin: ['http://localhost:3000', 'http://localhost:3003', 'https://ecommmerce-app-nine.vercel.app'], // frontend ports
-  credentials: true,
-  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-  allowedHeaders: ['Content-Type', 'Authorization'],
-  exposedHeaders: ['Authorization']
+  origin: process.env.FRONTEND_URL || '*', // e.g., Vercel frontend URL
+  credentials: true,                       // needed for cookies/auth headers
 }));
 
-// Debug route
-app.get('/debug', (req, res) => {
-  console.log('Debug route hit!');
-  res.json({ message: 'Debug route working', timestamp: new Date() });
+// --- Middleware ---
+app.use(express.json());
+
+// --- Routes ---
+app.use('/api/auth', authRoutes);
+app.use('/api/products', productRoutes);
+app.use('/api/cart', cartRoutes);
+
+// --- Default route ---
+app.get('/', (req, res) => {
+  res.send('E-commerce Backend is running.');
 });
 
-// Routes
-app.use('/api/auth', require('./routes/auth'));
-app.use('/api/products', require('./routes/products'));
-app.use('/api/cart', require('./routes/cart'));
-
-// Health check
-app.get('/health', (req, res) => {
-  const dbState = mongoose.connection.readyState;
-  const dbStatus = {
-    0: 'disconnected',
-    1: 'connected',
-    2: 'connecting',
-    3: 'disconnecting',
-  };
-  res.json({
-    status: 'OK',
-    timestamp: new Date().toISOString(),
-    database: dbStatus[dbState] || 'unknown'
-  });
-});
-
-// Global error handling middleware
-app.use((err, req, res, next) => {
-  console.error('Error:', err);
-  res.status(err.status || 500).json({
-    message: err.message || 'Internal Server Error',
-    stack: process.env.NODE_ENV === 'development' ? err.stack : undefined
-  });
-});
-
-// Database connection
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/ecommerce', {
-  serverSelectionTimeoutMS: 5000,
-  socketTimeoutMS: 45000,
+// --- Connect to MongoDB ---
+mongoose.connect(process.env.MONGO_URI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
 })
-  .then(() => console.log('MongoDB connected'))
-  .catch(err => {
-    console.error('MongoDB connection error:', err);
-    process.exit(1); // exit if DB connection fails
-  });
+.then(() => console.log('MongoDB connected'))
+.catch(err => {
+  console.error('MongoDB connection error:', err);
+  process.exit(1);
+});
 
-// Start server
-const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+// --- Start server ---
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
