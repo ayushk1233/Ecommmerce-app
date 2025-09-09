@@ -16,7 +16,9 @@ const PORT = process.env.PORT || 3001;
 const FRONTEND_URL = 'https://bingee-buyy.vercel.app';
 const allowedOrigins = [
   FRONTEND_URL,
-  'http://localhost:3000'
+  'http://localhost:3000',
+  'https://ecommmerce-app-nine.vercel.app',
+  'https://ecommmerce-app-ayush-kumars-projects-670ebe9f.vercel.app'
 ];
 
 console.log('Allowed CORS origins:', allowedOrigins);
