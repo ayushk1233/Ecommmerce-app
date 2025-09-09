@@ -4,7 +4,7 @@ A full-stack e-commerce application built with Next.js, Express.js, and MongoDB.
 
 ## 🌐 Live Deployment
 
-- Frontend: [https://bingee-buyy.vercel.app](https://bingee-buyy.vercel.app)
+- Frontend: [https://bingee-buyy.vercel.app](https://bingee-buyy.vercel.app) , https://ecommmerce-app-nine.vercel.app/ , https://ecommmerce-app-ayush-kumars-projects-670ebe9f.vercel.app/
 - Backend API: [https://ecommmerce-app-4c1y.onrender.com](https://ecommmerce-app-4c1y.onrender.com)
 
 ### Domain Setup
