@@ -1,4 +1,4 @@
-# E-commerce Application
+# BingeBuy : E-commerce Application
 
 A full-stack e-commerce application built with Next.js, Express.js, and MongoDB.
 
